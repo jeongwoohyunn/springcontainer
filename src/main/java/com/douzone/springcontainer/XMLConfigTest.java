@@ -14,8 +14,8 @@ import com.douzone.springcontainer.videosystem.DigitalVideoDisc;
 public class XMLConfigTest {
 
 	public static void main(String[] args) {
-		testXMLConfig01();
-		testXMLConfig02();
+		//testXMLConfig01();
+		//testXMLConfig02();
 	}
 
 	// XML Config01
@@ -37,7 +37,7 @@ public class XMLConfigTest {
 	// bean config
 	public static void testXMLConfig02() {
 		ApplicationContext appCtx =
-				new ClassPathXmlApplicationContext("config/videosystem/DVDPlayerConfig.xml");
+				new ClassPathXmlApplicationContext("config/videosystem/VideoSystemConfig.xml");
 
 		DigitalVideoDisc dvd = appCtx.getBean( Avengers.class );
 		System.out.println(dvd);

@@ -8,14 +8,14 @@ import com.douzone.springcontainer.videosystem.DVDPlayer;
 import com.douzone.springcontainer.videosystem.DigitalVideoDisc;
 
 @Configuration
-public class DVDPlayerConfig {
+public class VideoSystemConfig {
 	
 	@Bean
 	public Avengers avengers() {
 		return new Avengers();
 	}
 	
-	//@Bean
+	//@Bean //두개생기는 착각 23째 줄꺼로 쓰는게좋다.
 	public DVDPlayer dvdPlayer() {
 		return new DVDPlayer( avengers() );
 	}
